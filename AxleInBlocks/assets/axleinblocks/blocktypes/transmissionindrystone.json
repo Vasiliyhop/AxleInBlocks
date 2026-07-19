@@ -1,0 +1,68 @@
+{
+	"code": "transmission_ds",
+	"enabled": true,
+	"class": "BlockTransmissionCovered",
+	"entityClass": "Generic",
+	"entityBehaviors": [{ "name": "BEBehaviorMPTransmissionCovered" }],
+	"behaviors": [ {"name": "NWOrientable" } ],
+	"attributes": {
+		"handbook": {
+			"groupBy": ["transmission_ds-*"]
+		},
+		"mechanicalPower": {
+			"renderer": "transmission"
+		}
+	},
+	"creativeinventory": { "general": ["*-ns"], "mechanics": ["*-ns"] },
+	"variantgroups": [
+		{ "code": "material", "states": ["mixed"], "loadFromProperties": "block/rockwithdeposit" },
+		{ "code":"orientation", "states": ["ns", "we"] }
+	],
+	"skipVariants": [ "*-obsidian-*", "*-halite-*", "*-scoria-*", "*-tuff-*", "*-travertine-*" ],
+	"textures": {
+		"normal": { "base" :"game:block/stone/drystone/{material}*" },
+		"glass": { "base": "axleinblocks:block/obsidian-glass" },
+		"cover": { "base": "game:block/stone/drystone/{material}*" },
+		"stand": { "base": "game:block/wood/planks/oak1" }
+	},
+	"shapeInventory": { "base": "axleinblocks:transmission-covered-inventory" },
+	"shapeByType": {
+		"*-ns": { "base": "axleinblocks:transmission-covered-stand", "rotateY": 90 },
+		"*-we": { "base": "axleinblocks:transmission-covered-stand", "rotateY": 0 }
+	},
+	"blockmaterial": "Stone",
+	"sidesolid": {
+		"up": true,
+		"down": true,
+		"east": true,
+		"west": true,
+		"north": false,
+		"south": false
+	},
+	"sideopaque": {
+		"all": false
+	},
+	"rainPermeable": false,
+	"resistance": 3.5,
+	"lightAbsorption": 0,
+	"maxStackSize": 1,
+	"drops": [
+		{ "type": "block", "code": "transmission_ds-{material}-ns", "quantity": { "avg": 1 }  }
+	],
+	"sounds": {
+        "walk": "game:walk/stone",
+        "byTool": {
+            "Pickaxe": {
+                "hit": "game:block/rock-hit-pickaxe",
+                "break": "game:block/rock-break-pickaxe"
+            }
+        }
+    },
+	"materialDensity": 600,
+	"heldTpIdleAnimation": "holdbothhandslarge", "heldTpUseAnimation": "twohandplaceblock",
+	"tpHandTransform": {
+		"translation": { "x": -1.2, "y": -1.1, "z": -0.8 },
+		"rotation": { "x": -2, "y": 25, "z": -78 },
+		"scale": 0.37
+	}
+}

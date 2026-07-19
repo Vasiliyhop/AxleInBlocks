@@ -1,0 +1,249 @@
+[
+    {
+        "ingredientPattern": "HSC,BGA",
+        "ingredients": {
+            "H": {
+                "type": "item",
+                "code": "game:hammer-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "S": {
+                "type": "item",
+                "code": "game:saw-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "C": {
+                "type": "item",
+                "code": "game:chisel-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "B": {
+                "type": "block",
+                "code": "game:drystone-*",
+                "name": "rock",
+                "allowedVariants": [ "mixed", "andesite", "chalk", "chert", "conglomerate", "limestone", "claystone", "granite", "sandstone", "shale", "basalt", "peridotite", "phyllite", "slate", "bauxite" ]
+            },
+            "G": {
+                "type": "block",
+                "code": "game:transmission-ns"
+            },
+            "A": {
+                "type": "block",
+                "code": "axleinblocks:obsidianglass"
+            }
+        },
+        "width": 3,
+        "height": 2,
+        "output": {
+            "type": "block",
+            "code": "axleinblocks:transmission_ds-{rock}-ns",
+            "quantity": 1
+        }
+    },
+    {
+        "ingredientPattern": "HSC,BGA",
+        "ingredients": {
+            "H": {
+                "type": "item",
+                "code": "game:hammer-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "S": {
+                "type": "item",
+                "code": "game:saw-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "C": {
+                "type": "item",
+                "code": "game:chisel-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "B": {
+                "type": "block",
+                "code": "game:stonebricks-*",
+                "name": "rock",
+                "allowedVariants": [ "andesite", "chalk", "chert", "conglomerate", "limestone", "claystone", "granite", "sandstone", "shale", "basalt", "peridotite", "phyllite", "slate", "bauxite" ]
+            },
+            "G": {
+                "type": "block",
+                "code": "game:transmission-ns"
+            },
+            "A": {
+                "type": "block",
+                "code": "axleinblocks:obsidianglass"
+            }
+        },
+        "width": 3,
+        "height": 2,
+        "output": {
+            "type": "block",
+            "code": "axleinblocks:transmission_b-{rock}-ns",
+            "quantity": 1
+        }
+    },
+    {
+        "ingredientPattern": "HSC,BGA",
+        "ingredients": {
+            "H": {
+                "type": "item",
+                "code": "game:hammer-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "S": {
+                "type": "item",
+                "code": "game:saw-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "C": {
+                "type": "item",
+                "code": "game:chisel-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "B": {
+                "type": "block",
+                "code": "game:claybricks-good-fire"
+            },
+            "G": {
+                "type": "block",
+                "code": "game:transmission-ns"
+            },
+            "A": {
+                "type": "block",
+                "code": "axleinblocks:obsidianglass"
+            }
+        },
+        "width": 3,
+        "height": 2,
+        "output": {
+            "type": "block",
+            "code": "axleinblocks:transmission_cb-fire-ns",
+            "quantity": 1
+        }
+    },
+    {
+        "ingredientPattern": "HSC,BGA",
+        "ingredients": {
+            "H": {
+                "type": "item",
+                "code": "game:hammer-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "S": {
+                "type": "item",
+                "code": "game:saw-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "C": {
+                "type": "item",
+                "code": "game:chisel-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "B": {
+                "type": "block",
+                "code": "game:brickcourse-four-running-*",
+                "name": "type",
+                "allowedVariants": [ "black", "brown", "cream", "gray", "orange", "red", "tan", "clinker" ]
+            },
+            "G": {
+                "type": "block",
+                "code": "game:transmission-ns"
+            },
+            "A": {
+                "type": "block",
+                "code": "axleinblocks:obsidianglass"
+            }
+        },
+        "width": 3,
+        "height": 2,
+        "output": {
+            "type": "block",
+            "code": "axleinblocks:transmission_ccb-{type}-ns",
+            "quantity": 1
+        }
+    },
+    {
+        "ingredientPattern": "HSC,BGA",
+        "ingredients": {
+            "H": {
+                "type": "item",
+                "code": "game:hammer-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "S": {
+                "type": "item",
+                "code": "game:saw-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "C": {
+                "type": "item",
+                "code": "game:chisel-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "B": {
+                "type": "block",
+                "code": "game:planks-*-ud",
+                "name": "wood",
+                "skipVariants": ["veryaged", "agedacacia", "agedebony", "rottenebony"]
+            },
+            "G": {
+                "type": "block",
+                "code": "game:transmission-ns"
+            },
+            "A": {
+                "type": "block",
+                "code": "axleinblocks:obsidianglass"
+            }
+        },
+        "width": 3,
+        "height": 2,
+        "output": {
+            "type": "block",
+            "code": "axleinblocks:transmission_p-{wood}-ns",
+            "quantity": 1
+        }
+    },
+    {
+        "ingredientPattern": "_H_,_C_,_B_",
+        "ingredients": {
+            "H": {
+                "type": "item",
+                "code": "game:hammer-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "C": {
+                "type": "item",
+                "code": "game:chisel-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "B": {
+                "type": "block",
+                "code": "axleinblocks:transmission_*"
+            }
+        },
+        "width": 3,
+        "height": 3,
+        "output": {
+            "type": "block",
+            "code": "game:transmission-ns",
+            "quantity": 1
+        }
+    }
+
+]

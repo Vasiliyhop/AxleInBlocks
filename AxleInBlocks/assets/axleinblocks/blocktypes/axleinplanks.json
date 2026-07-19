@@ -1,0 +1,120 @@
+{
+	"code": "axleinplanks",
+	"class": "AxleInBlocks",
+	"entityClass": "AxleInBlocksEntity",
+	"entityBehaviors": [
+		{ "name": "AxleInBlocksBehavior" },
+		{ "name": "Animatable" }
+	],
+	"behaviors": [
+		{
+			"name": "Pillar",
+			"properties": { "invertedPlacement": true }
+		}
+	],
+	"attributes": {
+		"handbook": {
+			"groupBy": [ "axleinplanks-*" ]
+		}
+	},
+	"variantgroups": [
+		{
+			"code": "wood",
+			"states": ["aged"],
+			"loadFromProperties": "block/wood"
+		},
+		{
+			"code": "rotation",
+			"states": [ "ud", "ns", "we" ]
+		}
+	],
+	"creativeinventory": {
+		"general": [ "*-ud" ],
+		"mechanics": [ "*-ud" ]
+	},
+	"shapeInventory": {
+		"base": "axleinblocks:axleinblocks-inventory"
+	},
+	"shapeByType": {
+		"*-ns": {
+			"base": "axleinblocks:axleinblocks-stand",
+			"rotateY": 90
+		},
+		"*-ud": {
+			"base": "axleinblocks:axleinblocks-stand-ud",
+			"rotateZ": 0
+		},
+		"*-we": {
+			"base": "axleinblocks:axleinblocks-stand",
+			"rotateY": 0
+		}
+	},
+	"blockmaterial": "Wood",
+	"texturesByType": {
+		"*-aged-ud": {
+			"wood": { "base": "game:block/wood/planks/generic" },
+			"aged": { "base": "game:block/wood/planks/aged1" },
+			"brick": { "base": "game:block/wood/planks/aged/aged*", "rotation": 90 }
+		},
+		"*-aged-we": {
+			"wood": { "base": "game:block/wood/planks/generic" },
+			"aged": { "base": "game:block/wood/planks/aged1" },
+			"brick": { "base": "game:block/wood/planks/aged/aged*", "rotation": 0 }
+		},
+		"*-aged-ns": {
+			"wood": { "base": "game:block/wood/planks/generic" },
+			"aged": { "base": "game:block/wood/planks/aged1" },
+			"brick": { "base": "game:block/wood/planks/aged/aged*", "rotation": 90 }
+		},
+		"*-ud": {
+			"wood": { "base": "game:block/wood/planks/generic" },
+			"aged": { "base": "game:block/wood/planks/aged1" },
+			"brick": { "base": "game:block/wood/planks/{wood}*", "rotation": 90 }
+		},
+		"*-we": {
+			"wood": { "base": "game:block/wood/planks/generic" },
+			"aged": { "base": "game:block/wood/planks/aged1" },
+			"brick": { "base": "game:block/wood/planks/{wood}*", "rotation": 0 }
+		},
+		"*-ns": {
+			"wood": { "base": "game:block/wood/planks/generic" },
+			"aged": { "base": "game:block/wood/planks/aged1" },
+			"brick": { "base": "game:block/wood/planks/{wood}*", "rotation": 90 }
+		}
+	},
+	"sidesolid": {
+		"all": true
+	},
+	"sideopaque": {
+		"all": false
+	},
+	"rainPermeable": false,
+	"resistance": 3.5,
+	"lightAbsorption": 99,
+	"maxStackSize": 16,
+	"materialDensity": 600,
+	"drops": [
+		{
+			"type": "block",
+			"code": "axleinplanks-{wood}-ud",
+			"quantity": { "avg": 1 }
+		}
+	],
+	"sounds": {
+		"hit": "game:block/planks",
+		"break": "game:block/planks",
+		"place": "game:block/planks",
+		"walk": "game:walk/wood"
+	},
+	"combustibleProps": {
+		"burnTemperature": 800,
+		"burnDuration": 25
+	},
+	"heldTpIdleAnimation": "holdbothhandslarge",
+	"heldTpUseAnimation": "twohandplaceblock",
+	"tpHandTransform": {
+		"translation": { "x": -1.2, "y": -1.1, "z": -0.8 },
+		"rotation": { "x": -2, "y": 25, "z": -78 },
+		"scale": 0.37
+	}
+}

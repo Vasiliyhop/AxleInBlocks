@@ -1,0 +1,105 @@
+{
+	"code": "gearscrate_b",
+	"class": "BlockGearsCrate",
+	"entityClass": "Generic",
+	"entityBehaviors": [{ "name": "BEBehaviorMPGearsCrate" }],
+	"attributes": {
+		"mechanicalPower": {
+			"rendererByType": {
+				"*-n": "generic",
+				"*-e": "generic",
+				"*-s": "generic",
+				"*-w": "generic",
+				"*-u": "generic",
+				"*-d": "generic",
+				"*-nn": "angledgearcage",
+				"*-ee": "angledgearcage",
+				"*-ss": "angledgearcage",
+				"*-ww": "angledgearcage",
+				"*": "angledgears"
+			}
+		},
+		"handbook": {
+			"groupBy": [ "gearscrate_b-*" ]
+		}
+	},
+	"shapeByType": {
+		"*-n": { "base": "game:block/wood/mechanics/angledgearbox-peg" },
+		"*-e": { "base": "game:block/wood/mechanics/angledgearbox-peg", "rotateY": 270 },
+		"*-s": { "base": "game:block/wood/mechanics/angledgearbox-peg", "rotateY": 180 },
+		"*-w": { "base": "game:block/wood/mechanics/angledgearbox-peg", "rotateY": 90 },
+		"*-u": { "base": "game:block/wood/mechanics/angledgearbox-peg", "rotateX": 90 },
+		"*-d": { "base": "game:block/wood/mechanics/angledgearbox-peg", "rotateX": 270 },
+
+		"*-en": { "base": "game:block/wood/mechanics/angledgearbox" },
+		"*-nw": { "base": "game:block/wood/mechanics/angledgearbox", "rotateY": 90 },
+		"*-ws": { "base": "game:block/wood/mechanics/angledgearbox", "rotateY": 180 },
+		"*-es": { "base": "game:block/wood/mechanics/angledgearbox", "rotateY": 270 },
+
+		"*-nu": { "base": "game:block/wood/mechanics/angledgearbox", "rotateX": 90, "rotateZ": 270 },
+		"*-nd": { "base": "game:block/wood/mechanics/angledgearbox", "rotateZ": 270 },
+		"*-eu": { "base": "game:block/wood/mechanics/angledgearbox", "rotateX": 90 },
+		"*-ed": { "base": "game:block/wood/mechanics/angledgearbox", "rotateX": 270 },
+
+		"*-su": { "base": "game:block/wood/mechanics/angledgearbox", "rotateX": 90, "rotateY": 0, "rotateZ": 90 },
+		"*-sd": { "base": "game:block/wood/mechanics/angledgearbox", "rotateX": 180, "rotateZ": 90 },
+
+		"*-wu": { "base": "game:block/wood/mechanics/angledgearbox", "rotateX": 90, "rotateZ": 180 },
+		"*-wd": { "base": "game:block/wood/mechanics/angledgearbox", "rotateX": 180, "rotateY": 90, "rotateZ": 90 },
+
+		"*-nn": { "base": "game:block/wood/mechanics/angledgearbox-cage", "rotateY": 90 },
+		"*-ee": { "base": "game:block/wood/mechanics/angledgearbox-cage", "rotateY": 0 },
+		"*-ss": { "base": "game:block/wood/mechanics/angledgearbox-cage", "rotateY": 270 },
+		"*-ww": { "base": "game:block/wood/mechanics/angledgearbox-cage", "rotateY": 180 }
+	},
+	"shapeInventory": {
+		"base": "axleinblocks:gear-crate-{shape}-inventory",
+		"rotateY": 270
+	},
+	"drawtype": "json",
+	"variantgroups": [
+		{ "code": "shape", "states": ["n", "c"] },
+		{ "code": "material", "loadFromProperties": "block/rock" },
+		{ "code": "orientation", "states": ["n", "e", "s", "w", "u", "d", "en", "nw", "ws", "es", "nu", "nd", "eu", "ed", "su", "sd", "wu", "wd", "nn", "ss", "ww", "ee"] }
+	],
+	"skipVariants": [ "*-obsidian-*", "*-halite-*", "*-scoria-*", "*-tuff-*"],
+	"creativeinventory": { "general": ["*-s"], "mechanics": ["*-s"] },
+	"blockmaterial": "Stone",
+	"faceCullMode": "MergeMaterial",
+	"replaceable": 900,
+	"resistance": 3.5,
+	"lightAbsorption": 0,
+	"maxstacksize": 8,
+	"textures": {
+		"wood": { "base": "game:block/wood/planks/generic" },
+		"normal": { "base" :"game:block/stone/brick/{material}*" },
+		"glass": { "base": "axleinblocks:block/obsidian-glass" },
+		"cover": { "base": "game:block/stone/brick/{material}*" }
+	},
+	"drops": [
+		{ "type": "block", "code": "gearscrate_b-{shape}-{material}-s" }
+	],
+	"sidesolid": {
+		"all": true
+	},
+	"sideopaque": {
+		"all": false
+	},
+	"sounds": {
+        "walk": "game:walk/stone",
+        "place": "game:block/ceramicplace",
+        "byTool": {
+            "Pickaxe": {
+                "hit": "game:block/rock-hit-pickaxe",
+                "break": "game:block/rock-break-pickaxe"
+            }
+        }
+    },
+	"materialDensity": 600,
+	"heldTpIdleAnimation": "holdbothhandslarge", "heldTpUseAnimation": "twohandplaceblock",
+	"tpHandTransform": {
+		"translation": { "x": -1.2, "y": -1.1, "z": -0.8 },
+		"rotation": { "x": -2, "y": 25, "z": -78 },
+		"scale": 0.37
+	}
+}

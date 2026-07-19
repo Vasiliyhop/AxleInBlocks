@@ -1,0 +1,12 @@
+{
+    "$schema": "https://moddbcdn.vintagestory.at/schema/modinfo.latest.json",
+    "type": "Code",
+    "modid": "axleinblocks",
+    "name": "Axle in blocks",
+    "authors": [ "Fossilien" ],
+    "description": "Allows hide axle, gears and transmission inside bricks, dry stone and wooden planks.",
+    "version": "1.22.3",
+    "dependencies": {
+        "game": "1.22.3"
+    }
+}

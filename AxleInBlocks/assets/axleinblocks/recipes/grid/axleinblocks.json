@@ -1,0 +1,302 @@
+[
+    {
+        "ingredientPattern": "_H_,_C_,ABF",
+        "ingredients": {
+            "H": {
+                "type": "item",
+                "code": "game:hammer-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "C": {
+                "type": "item",
+                "code": "game:chisel-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "A": {
+                "type": "block",
+                "code": "game:woodenaxle-ud"
+            },
+            "B": {
+                "type": "block",
+                "code": "game:stonebricks-*",
+                "name": "rock",
+                "allowedVariants": [ "andesite", "chalk", "chert", "conglomerate", "limestone", "claystone", "granite", "sandstone", "shale", "basalt", "peridotite", "phyllite", "slate", "bauxite" ]
+            },
+            "F": {
+                "type": "item",
+                "code": "game:fat"
+            }
+        },
+        "width": 3,
+        "height": 3,
+        "output": {
+            "type": "block",
+            "code": "axleinblocks:axleinbricks-{rock}-ud",
+            "quantity": 1
+        }
+    },
+    {
+        "ingredientPattern": "_H_,_C_,_B_",
+        "ingredients": {
+            "H": {
+                "type": "item",
+                "code": "game:hammer-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "C": {
+                "type": "item",
+                "code": "game:chisel-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "B": {
+                "type": "block",
+                "code": "axleinblocks:axleinbricks-*"
+            }
+        },
+        "width": 3,
+        "height": 3,
+        "output": {
+            "type": "block",
+            "code": "game:woodenaxle-ud",
+            "quantity": 1
+        }
+    },
+    {
+        "ingredientPattern": "_H_,_C_,ABF",
+        "ingredients": {
+            "H": {
+                "type": "item",
+                "code": "game:hammer-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "C": {
+                "type": "item",
+                "code": "game:chisel-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "A": {
+                "type": "block",
+                "code": "game:woodenaxle-ud"
+            },
+            "B": {
+                "type": "block",
+                "code": "game:claybricks-good-fire"
+            },
+            "F": {
+                "type": "item",
+                "code": "game:fat"
+            }
+        },
+        "width": 3,
+        "height": 3,
+        "output": {
+            "type": "block",
+            "code": "axleinblocks:axleinclaybricks-fire-ud",
+            "quantity": 1
+        }
+    },
+    {
+        "ingredientPattern": "_H_,_C_,ABF",
+        "ingredients": {
+            "H": {
+                "type": "item",
+                "code": "game:hammer-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "C": {
+                "type": "item",
+                "code": "game:chisel-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "A": {
+                "type": "block",
+                "code": "game:woodenaxle-ud"
+            },
+            "B": {
+                "type": "block",
+                "code": "game:brickcourse-four-running-*",
+                "name": "type",
+                "allowedVariants": [ "black", "brown", "cream", "gray", "orange", "red", "tan", "clinker" ]
+            },
+            "F": {
+                "type": "item",
+                "code": "game:fat"
+            }
+        },
+        "width": 3,
+        "height": 3,
+        "output": {
+            "type": "block",
+            "code": "axleinblocks:axleinclaycoursebricks-{type}-ud",
+            "quantity": 1
+        }
+    },
+    {
+        "ingredientPattern": "_H_,_C_,_B_",
+        "ingredients": {
+            "H": {
+                "type": "item",
+                "code": "game:hammer-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "C": {
+                "type": "item",
+                "code": "game:chisel-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "B": {
+                "type": "block",
+                "code": "axleinblocks:axleinclaybricks-*"
+            }
+        },
+        "width": 3,
+        "height": 3,
+        "output": {
+            "type": "block",
+            "code": "game:woodenaxle-ud",
+            "quantity": 1
+        }
+    },
+    {
+        "ingredientPattern": "_H_,_C_,ABF",
+        "ingredients": {
+            "H": {
+                "type": "item",
+                "code": "game:hammer-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "C": {
+                "type": "item",
+                "code": "game:chisel-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "A": {
+                "type": "block",
+                "code": "game:woodenaxle-ud"
+            },
+            "B": {
+                "type": "block",
+                "code": "game:drystone-*",
+                "name": "rock",
+                "allowedVariants": [ "mixed", "andesite", "chalk", "chert", "conglomerate", "limestone", "claystone", "granite", "sandstone", "shale", "basalt", "peridotite", "phyllite", "slate", "bauxite" ]
+            },
+            "F": {
+                "type": "item",
+                "code": "game:fat"
+            }
+        },
+        "width": 3,
+        "height": 3,
+        "output": {
+            "type": "block",
+            "code": "axleinblocks:axleindrystone-{rock}-ud",
+            "quantity": 1
+        }
+    },
+    {
+        "ingredientPattern": "_H_,_C_,_B_",
+        "ingredients": {
+            "H": {
+                "type": "item",
+                "code": "game:hammer-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "C": {
+                "type": "item",
+                "code": "game:chisel-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "B": {
+                "type": "block",
+                "code": "axleinblocks:axleindrystone-*"
+            }
+        },
+        "width": 3,
+        "height": 3,
+        "output": {
+            "type": "block",
+            "code": "game:woodenaxle-ud",
+            "quantity": 1
+        }
+    },
+    {
+        "ingredientPattern": "_H_,_C_,ABF",
+        "ingredients": {
+            "H": {
+                "type": "item",
+                "code": "game:hammer-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "C": {
+                "type": "item",
+                "code": "game:chisel-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "A": {
+                "type": "block",
+                "code": "game:woodenaxle-ud"
+            },
+            "B": {
+                "type": "block",
+                "code": "game:planks-*-ud",
+                "name": "wood",
+                "skipVariants": ["veryaged", "agedacacia", "agedebony", "rottenebony"]
+            },
+            "F": {
+                "type": "item",
+                "code": "game:fat"
+            }
+        },
+        "width": 3,
+        "height": 3,
+        "output": {
+            "type": "block",
+            "code": "axleinblocks:axleinplanks-{wood}-ud",
+            "quantity": 1
+        }
+    },
+    {
+        "ingredientPattern": "_H_,_C_,_B_",
+        "ingredients": {
+            "H": {
+                "type": "item",
+                "code": "game:hammer-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "C": {
+                "type": "item",
+                "code": "game:chisel-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "B": {
+                "type": "block",
+                "code": "axleinblocks:axleinplanks-*"
+            }
+        },
+        "width": 3,
+        "height": 3,
+        "output": {
+            "type": "block",
+            "code": "game:woodenaxle-ud",
+            "quantity": 1
+        }
+    }
+]

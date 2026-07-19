@@ -1,0 +1,156 @@
+{
+    "code": "transmission_ccb",
+    "enabled": true,
+    "class": "BlockTransmissionCovered",
+    "entityClass": "Generic",
+    "entityBehaviors": [ { "name": "BEBehaviorMPTransmissionCovered" } ],
+    "behaviors": [ { "name": "NWOrientable" } ],
+    "attributes": {
+        "handbook": {
+            "groupBy": [ "transmission_ccb-*" ]
+        },
+        "mechanicalPower": {
+            "renderer": "transmission"
+        }
+    },
+    "creativeinventory": {
+        "general": [ "*-ns" ],
+        "mechanics": [ "*-ns" ]
+    },
+    "variantgroups": [
+        {
+            "code": "material",
+            "states": [ "black", "brown", "cream", "gray", "orange", "red", "tan", "clinker" ]
+        },
+        {
+            "code": "orientation",
+            "states": [ "ns", "we" ]
+        }
+    ],
+    "texturesByType": {
+        "*-cream-*": {
+            "stand": { "base": "game:block/wood/planks/oak1" },
+            "glass": { "base": "axleinblocks:block/obsidian-glass" },
+            "normal": { "base": "game:block/clay/brick/four/running/cream*" },
+            "cover": { "base": "game:block/clay/brick/four/running/cream*" }
+        },
+        "*-clinker-*": {
+            "stand": { "base": "game:block/wood/planks/oak1" },
+            "glass": { "base": "axleinblocks:block/obsidian-glass" },
+            "normal": { "base": "game:block/clay/brick/four/running/clinker*" },
+            "cover": { "base": "game:block/clay/brick/four/running/clinker*" }
+        },
+        "*": {
+            "stand": { "base": "game:block/wood/planks/oak1" },
+            "glass": { "base": "axleinblocks:block/obsidian-glass" },
+            "normal": {
+                "base": "game:block/clay/brick/four/running/cream1",
+                "overlays": [
+                    "game:block/clay/brick/four/running/{material}1"
+                ],
+                "alternates": [
+                    {
+                        "base": "game:block/clay/brick/four/running/cream2",
+                        "overlays": [ "game:block/clay/brick/four/running/{material}1" ]
+                    },
+                    {
+                        "base": "game:block/clay/brick/four/running/cream3",
+                        "overlays": [ "game:block/clay/brick/four/running/{material}1" ]
+                    },
+                    {
+                        "base": "game:block/clay/brick/four/running/cream4",
+                        "overlays": [ "game:block/clay/brick/four/running/{material}1" ]
+                    },
+                    {
+                        "base": "game:block/clay/brick/four/running/cream5",
+                        "overlays": [ "game:block/clay/brick/four/running/{material}1" ]
+                    }
+                ]
+            },
+            "cover": {
+                "base": "game:block/clay/brick/four/running/cream1",
+                "overlays": [
+                    "game:block/clay/brick/four/running/{material}1"
+                ],
+                "alternates": [
+                    {
+                        "base": "game:block/clay/brick/four/running/cream2",
+                        "overlays": [ "game:block/clay/brick/four/running/{material}1" ]
+                    },
+                    {
+                        "base": "game:block/clay/brick/four/running/cream3",
+                        "overlays": [ "game:block/clay/brick/four/running/{material}1" ]
+                    },
+                    {
+                        "base": "game:block/clay/brick/four/running/cream4",
+                        "overlays": [ "game:block/clay/brick/four/running/{material}1" ]
+                    },
+                    {
+                        "base": "game:block/clay/brick/four/running/cream5",
+                        "overlays": [ "game:block/clay/brick/four/running/{material}1" ]
+                    }
+                ]
+            }
+        }
+    },
+    "shapeInventory": { "base": "axleinblocks:transmission-covered-inventory" },
+    "shapeByType": {
+        "*-ns": {
+            "base": "axleinblocks:transmission-covered-stand",
+            "rotateY": 90
+        },
+        "*-we": {
+            "base": "axleinblocks:transmission-covered-stand",
+            "rotateY": 0
+        }
+    },
+    "blockmaterial": "Stone",
+    "sidesolid": {
+        "up": true,
+        "down": true,
+        "east": true,
+        "west": true,
+        "north": false,
+        "south": false
+    },
+    "sideopaque": {
+        "all": false
+    },
+    "rainPermeable": false,
+    "resistance": 3.5,
+    "lightAbsorption": 0,
+    "maxStackSize": 1,
+    "drops": [
+        {
+            "type": "block",
+            "code": "transmission_ccb-{material}-ns",
+            "quantity": { "avg": 1 }
+        }
+    ],
+    "sounds": {
+        "walk": "game:walk/stone",
+        "place": "game:block/ceramicplace",
+        "byTool": {
+            "Pickaxe": {
+                "hit": "game:block/rock-hit-pickaxe",
+                "break": "game:block/rock-break-pickaxe"
+            }
+        }
+    },
+    "materialDensity": 600,
+    "heldTpIdleAnimation": "holdbothhandslarge",
+    "heldTpUseAnimation": "twohandplaceblock",
+    "tpHandTransform": {
+        "translation": {
+            "x": -1.2,
+            "y": -1.1,
+            "z": -0.8
+        },
+        "rotation": {
+            "x": -2,
+            "y": 25,
+            "z": -78
+        },
+        "scale": 0.37
+    }
+}

@@ -1,0 +1,88 @@
+{
+	"code": "axleinbricks",
+	"class": "AxleInBlocks",
+	"entityClass": "AxleInBlocksEntity",
+	"entityBehaviors": [
+		{ "name": "AxleInBlocksBehavior" },
+		{ "name": "Animatable" }
+	],
+	"behaviors": [
+		{
+			"name": "Pillar",
+			"properties": { "invertedPlacement": true }
+		}
+	],
+	"attributes": {
+		"handbook": {
+			"groupBy": [ "axleinbricks-*" ]
+		}
+	},
+	"variantgroups": [
+		{ "loadFromProperties": "block/rock" },
+		{
+			"code": "rotation",
+			"states": [ "ud", "ns", "we" ]
+		}
+	],
+	"creativeinventory": {
+		"general": [ "*-ud" ],
+		"mechanics": [ "*-ud" ]
+	},
+	"shapeInventory": {
+		"base": "axleinblocks:axleinblocks-inventory"
+	},
+	"shapeByType": {
+		"*-ns": {
+			"base": "axleinblocks:axleinblocks-stand",
+			"rotateY": 90
+		},
+		"*-ud": {
+			"base": "axleinblocks:axleinblocks-stand-ud",
+			"rotateZ": 0
+		},
+		"*-we": {
+			"base": "axleinblocks:axleinblocks-stand",
+			"rotateY": 0
+		}
+	},
+	"blockmaterial": "Stone",
+	"textures": {
+		"wood": { "base": "game:block/wood/planks/generic" },
+		"aged": { "base": "game:block/wood/planks/aged1" },
+		"brick": { "base": "game:block/stone/brick/{rock}*" }
+	},
+	"sidesolid": {
+		"all": true
+	},
+	"sideopaque": {
+		"all": false
+	},
+	"rainPermeable": false,
+	"replaceable": 200,
+	"resistance": 4,
+	"lightAbsorption": 99,
+	"maxStackSize": 16,
+	"drops": [
+		{
+			"type": "block",
+			"code": "axleinbricks-{rock}-ud",
+			"quantity": { "avg": 1 }
+		}
+	],
+	"sounds": {
+		"walk": "game:walk/stone",
+		"byTool": {
+			"Pickaxe": {
+				"hit": "game:block/rock-hit-pickaxe",
+				"break": "game:block/rock-break-pickaxe"
+			}
+		}
+	},
+	"heldTpIdleAnimation": "holdbothhandslarge",
+	"heldTpUseAnimation": "twohandplaceblock",
+	"tpHandTransform": {
+		"translation": { "x": -1.2, "y": -1.1, "z": -0.8 },
+		"rotation": { "x": -2, "y": 25, "z": -78 },
+		"scale": 0.37
+	}
+}

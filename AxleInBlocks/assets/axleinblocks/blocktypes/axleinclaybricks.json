@@ -1,0 +1,93 @@
+{
+    "code": "axleinclaybricks",
+    "class": "AxleInBlocks",
+    "entityClass": "AxleInBlocksEntity",
+    "entityBehaviors": [
+        { "name": "AxleInBlocksBehavior" },
+        { "name": "Animatable" }
+    ],
+    "behaviors": [
+        {
+            "name": "Pillar",
+            "properties": { "invertedPlacement": true }
+        }
+    ],
+    "attributes": {
+        "handbook": {
+            "groupBy": [ "axleinclaybricks-*" ]
+        }
+    },
+    "variantgroups": [
+        {
+            "code":"type",
+            "states": ["fire"]
+        },
+        {
+            "code": "rotation",
+            "states": [ "ud", "ns", "we" ]
+        }
+    ],
+
+    "creativeinventory": {
+        "general": [ "*-ud" ],
+        "mechanics": [ "*-ud" ]
+    },
+    "shapeInventory": {
+        "base": "axleinblocks:axleinblocks-inventory"
+    },
+    "shapeByType": {
+        "*-ns": {
+            "base": "axleinblocks:axleinblocks-stand",
+            "rotateY": 90
+        },
+        "*-ud": {
+            "base": "axleinblocks:axleinblocks-stand-ud",
+            "rotateZ": 0
+        },
+        "*-we": {
+            "base": "axleinblocks:axleinblocks-stand",
+            "rotateY": 0
+        }
+    },
+    "blockmaterial": "Ceramic",
+    "textures": {
+        "wood": { "base": "game:block/wood/planks/generic" },
+        "aged": { "base": "game:block/wood/planks/aged1" },
+        "brick": { "base": "game:block/clay/brick/four/running/{type}*" }
+    },
+    "sidesolid": {
+        "all": true
+    },
+    "sideopaque": {
+        "all": true
+    },
+    "rainPermeable": false,
+    "replaceable": 700,
+    "resistance": 2,
+    "lightAbsorption": 99,
+    "maxStackSize": 16,
+    "drops": [
+        {
+            "type": "block",
+            "code": "axleinclaybricks-{type}-ud",
+            "quantity": { "avg": 1 }
+        }
+    ],
+    "sounds": {
+        "walk": "game:walk/stone",
+        "place": "game:block/ceramicplace",
+        "byTool": {
+            "Pickaxe": {
+                "hit": "game:block/rock-hit-pickaxe",
+                "break": "game:block/rock-break-pickaxe"
+            }
+        }
+    },
+    "heldTpIdleAnimation": "holdbothhandslarge",
+	"heldTpUseAnimation": "twohandplaceblock",
+	"tpHandTransform": {
+		"translation": { "x": -1.2, "y": -1.1, "z": -0.8 },
+		"rotation": { "x": -2, "y": 25, "z": -78 },
+		"scale": 0.37
+	}
+}

@@ -1,0 +1,15 @@
+[
+  {
+    "op": "add",
+    "path": "/crushingPropsByType/*-obsidian",
+    "value": {
+      "crushedStack": {
+        "type": "item",
+        "code": "axleinblocks:crushed-obsidian",
+        "stacksize": 1
+      },
+      "hardnessTier": 2
+    },
+    "file": "game:itemtypes/resource/stone.json"
+  }
+]

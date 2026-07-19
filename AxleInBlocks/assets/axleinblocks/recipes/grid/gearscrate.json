@@ -1,0 +1,576 @@
+[
+    {
+        "ingredientPattern": "OQL",
+        "ingredients": {
+            "O": {
+                "type": "item",
+                "code": "axleinblocks:crushed-obsidian",
+                "quantity": 2
+            },
+            "Q": {
+                "type": "item",
+                "code": "game:crushed-quartz",
+                "quantity": 6
+            },
+            "L": {
+                "type": "item",
+                "code": "game:lime",
+                "quantity": 1
+            }
+        },
+        "name": "blastingpowder",
+        "width": 3,
+        "height": 1,
+        "shapeless": true,
+        "output": {
+            "type": "item",
+            "code": "axleinblocks:obsidian-quartz-powder",
+            "quantity": 8
+        }
+    },
+    {
+        "ingredientPattern": "HSC,BGA",
+        "ingredients": {
+            "H": {
+                "type": "item",
+                "code": "game:hammer-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "S": {
+                "type": "item",
+                "code": "game:saw-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "C": {
+                "type": "item",
+                "code": "game:chisel-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "B": {
+                "type": "block",
+                "code": "game:drystone-*",
+                "name": "rock",
+                "allowedVariants": [ "mixed", "andesite", "chalk", "chert", "conglomerate", "limestone", "claystone", "granite", "sandstone", "shale", "basalt", "peridotite", "phyllite", "slate", "bauxite" ]
+            },
+            "G": {
+                "type": "block",
+                "code": "game:angledgears-s"
+            },
+            "A": {
+                "type": "block",
+                "code": "axleinblocks:obsidianglass"
+            }
+        },
+        "width": 3,
+        "height": 2,
+        "output": {
+            "type": "block",
+            "code": "axleinblocks:gearscrate_ds-c-{rock}-s",
+            "quantity": 1
+        }
+    },
+    {
+        "ingredientPattern": "_H_,_C_,_B_",
+        "ingredients": {
+            "H": {
+                "type": "item",
+                "code": "game:hammer-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "C": {
+                "type": "item",
+                "code": "game:chisel-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "B": {
+                "type": "block",
+                "code": "axleinblocks:gearscrate_ds-c-*-s",
+                "name": "rock",
+                "allowedVariants": [ "mixed", "andesite", "chalk", "chert", "conglomerate", "limestone", "claystone", "granite", "sandstone", "shale", "basalt", "peridotite", "phyllite", "slate", "bauxite" ]
+            }
+        },
+        "width": 3,
+        "height": 3,
+        "output": {
+            "type": "block",
+            "code": "axleinblocks:gearscrate_ds-n-{rock}-s",
+            "quantity": 1
+        }
+    },
+    {
+        "ingredientPattern": "_H_,_C_,LBL",
+        "ingredients": {
+            "H": {
+                "type": "item",
+                "code": "game:hammer-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "C": {
+                "type": "item",
+                "code": "game:chisel-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "L": {
+                "type": "item",
+                "code": "game:stone-*",
+                "name": "rock",
+                "allowedVariants": [ "andesite", "chalk", "chert", "conglomerate", "limestone", "claystone", "granite", "sandstone", "shale", "basalt", "peridotite", "phyllite", "slate", "bauxite" ]
+            },
+            "B": {
+                "type": "block",
+                "code": "axleinblocks:gearscrate_ds-n-*-s",
+                "name": "rock",
+                "allowedVariants": [ "andesite", "chalk", "chert", "conglomerate", "limestone", "claystone", "granite", "sandstone", "shale", "basalt", "peridotite", "phyllite", "slate", "bauxite" ]
+            }
+        },
+        "width": 3,
+        "height": 3,
+        "output": {
+            "type": "block",
+            "code": "axleinblocks:gearscrate_ds-c-{rock}-s",
+            "quantity": 1
+        }
+    },
+    {
+        "ingredientPattern": "HSC,BGA",
+        "ingredients": {
+            "H": {
+                "type": "item",
+                "code": "game:hammer-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "S": {
+                "type": "item",
+                "code": "game:saw-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "C": {
+                "type": "item",
+                "code": "game:chisel-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "B": {
+                "type": "block",
+                "code": "game:stonebricks-*",
+                "name": "rock",
+                "allowedVariants": [ "andesite", "chalk", "chert", "conglomerate", "limestone", "claystone", "granite", "sandstone", "shale", "basalt", "peridotite", "phyllite", "slate", "bauxite" ]
+            },
+            "G": {
+                "type": "block",
+                "code": "game:angledgears-s"
+            },
+            "A": {
+                "type": "block",
+                "code": "axleinblocks:obsidianglass"
+            }
+        },
+        "width": 3,
+        "height": 2,
+        "output": {
+            "type": "block",
+            "code": "axleinblocks:gearscrate_b-c-{rock}-s",
+            "quantity": 1
+        }
+    },
+    {
+        "ingredientPattern": "_H_,_C_,_B_",
+        "ingredients": {
+            "H": {
+                "type": "item",
+                "code": "game:hammer-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "C": {
+                "type": "item",
+                "code": "game:chisel-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "B": {
+                "type": "block",
+                "code": "axleinblocks:gearscrate_b-c-*-s",
+                "name": "rock",
+                "allowedVariants": [ "andesite", "chalk", "chert", "conglomerate", "limestone", "claystone", "granite", "sandstone", "shale", "basalt", "peridotite", "phyllite", "slate", "bauxite" ]
+            }
+        },
+        "width": 3,
+        "height": 3,
+        "output": {
+            "type": "block",
+            "code": "axleinblocks:gearscrate_b-n-{rock}-s",
+            "quantity": 1
+        }
+    },
+    {
+        "ingredientPattern": "_H_,_C_,LBL",
+        "ingredients": {
+            "H": {
+                "type": "item",
+                "code": "game:hammer-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "C": {
+                "type": "item",
+                "code": "game:chisel-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "L": {
+                "type": "item",
+                "code": "game:stonebrick-*",
+                "name": "rock",
+                "allowedVariants": [ "andesite", "chalk", "chert", "conglomerate", "limestone", "claystone", "granite", "sandstone", "shale", "basalt", "peridotite", "phyllite", "slate", "bauxite" ]
+            },
+            "B": {
+                "type": "block",
+                "code": "axleinblocks:gearscrate_b-n-*-s",
+                "name": "rock",
+                "allowedVariants": [ "andesite", "chalk", "chert", "conglomerate", "limestone", "claystone", "granite", "sandstone", "shale", "basalt", "peridotite", "phyllite", "slate", "bauxite" ]
+            }
+        },
+        "width": 3,
+        "height": 3,
+        "output": {
+            "type": "block",
+            "code": "axleinblocks:gearscrate_b-c-{rock}-s",
+            "quantity": 1
+        }
+    },
+    {
+        "ingredientPattern": "HSC,BGA",
+        "ingredients": {
+            "H": {
+                "type": "item",
+                "code": "game:hammer-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "S": {
+                "type": "item",
+                "code": "game:saw-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "C": {
+                "type": "item",
+                "code": "game:chisel-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "B": {
+                "type": "block",
+                "code": "game:claybricks-good-fire"
+            },
+            "G": {
+                "type": "block",
+                "code": "game:angledgears-s"
+            },
+            "A": {
+                "type": "block",
+                "code": "axleinblocks:obsidianglass"
+            }
+        },
+        "width": 3,
+        "height": 2,
+        "output": {
+            "type": "block",
+            "code": "axleinblocks:gearscrate_cb-c-fire-s",
+            "quantity": 1
+        }
+    },
+    {
+        "ingredientPattern": "HSC,BGA",
+        "ingredients": {
+            "H": {
+                "type": "item",
+                "code": "game:hammer-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "S": {
+                "type": "item",
+                "code": "game:saw-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "C": {
+                "type": "item",
+                "code": "game:chisel-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "B": {
+                "type": "block",
+                "code": "game:brickcourse-four-running-*",
+                "name": "type",
+                "allowedVariants": [ "black", "brown", "cream", "gray", "orange", "red", "tan", "clinker" ]
+            },
+            "G": {
+                "type": "block",
+                "code": "game:angledgears-s"
+            },
+            "A": {
+                "type": "block",
+                "code": "axleinblocks:obsidianglass"
+            }
+        },
+        "width": 3,
+        "height": 2,
+        "output": {
+            "type": "block",
+            "code": "axleinblocks:gearscrate_ccb-c-{type}-s",
+            "quantity": 1
+        }
+    },
+    {
+        "ingredientPattern": "_H_,_C_,_B_",
+        "ingredients": {
+            "H": {
+                "type": "item",
+                "code": "game:hammer-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "C": {
+                "type": "item",
+                "code": "game:chisel-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "B": {
+                "type": "block",
+                "code": "axleinblocks:gearscrate_cb-c-*-s",
+                "name": "type",
+                "allowedVariants": [ "fire" ]
+            }
+        },
+        "width": 3,
+        "height": 3,
+        "output": {
+            "type": "block",
+            "code": "axleinblocks:gearscrate_cb-n-{type}-s",
+            "quantity": 1
+        }
+    },
+    {
+        "ingredientPattern": "_H_,_C_,_B_",
+        "ingredients": {
+            "H": {
+                "type": "item",
+                "code": "game:hammer-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "C": {
+                "type": "item",
+                "code": "game:chisel-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "B": {
+                "type": "block",
+                "code": "axleinblocks:gearscrate_ccb-c-*-s",
+                "name": "type",
+                "allowedVariants": [ "black", "brown", "cream", "gray", "orange", "red", "tan", "clinker" ]
+            }
+        },
+        "width": 3,
+        "height": 3,
+        "output": {
+            "type": "block",
+            "code": "axleinblocks:gearscrate_ccb-n-{type}-s",
+            "quantity": 1
+        }
+    },
+    {
+        "ingredientPattern": "_H_,_C_,LBL",
+        "ingredients": {
+            "H": {
+                "type": "item",
+                "code": "game:hammer-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "C": {
+                "type": "item",
+                "code": "game:chisel-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "L": {
+                "type": "item",
+                "code": "game:burnedbrick-*",
+                "name": "type",
+                "allowedVariants": [ "fire" ]
+            },
+            "B": {
+                "type": "block",
+                "code": "axleinblocks:gearscrate_cb-n-*-s",
+                "name": "type",
+                "allowedVariants": [ "fire" ]
+            }
+        },
+        "width": 3,
+        "height": 3,
+        "output": {
+            "type": "block",
+            "code": "axleinblocks:gearscrate_cb-c-{type}-s",
+            "quantity": 1
+        }
+    },
+    {
+        "ingredientPattern": "_H_,_C_,LBL",
+        "ingredients": {
+            "H": {
+                "type": "item",
+                "code": "game:hammer-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "C": {
+                "type": "item",
+                "code": "game:chisel-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "L": {
+                "type": "item",
+                "code": "game:burnedbrick-*",
+                "name": "type",
+                "allowedVariants": [ "black", "brown", "cream", "gray", "orange", "red", "tan", "clinker" ]
+            },
+            "B": {
+                "type": "block",
+                "code": "axleinblocks:gearscrate_ccb-n-*-s",
+                "name": "type",
+                "allowedVariants": [ "black", "brown", "cream", "gray", "orange", "red", "tan", "clinker" ]
+            }
+        },
+        "width": 3,
+        "height": 3,
+        "output": {
+            "type": "block",
+            "code": "axleinblocks:gearscrate_ccb-c-{type}-s",
+            "quantity": 1
+        }
+    },
+    {
+        "ingredientPattern": "HSC,BGA",
+        "ingredients": {
+            "H": {
+                "type": "item",
+                "code": "game:hammer-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "S": {
+                "type": "item",
+                "code": "game:saw-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "C": {
+                "type": "item",
+                "code": "game:chisel-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "B": {
+                "type": "block",
+                "code": "game:planks-*-ud",
+                "name": "wood",
+                "skipVariants": ["veryaged", "agedacacia", "agedebony", "rottenebony"]
+            },
+            "G": {
+                "type": "block",
+                "code": "game:angledgears-s"
+            },
+            "A": {
+                "type": "block",
+                "code": "axleinblocks:obsidianglass"
+            }
+        },
+        "width": 3,
+        "height": 2,
+        "output": {
+            "type": "block",
+            "code": "axleinblocks:gearscrate_p-c-{wood}-s",
+            "quantity": 1
+        }
+    },
+    {
+        "ingredientPattern": "_H_,_C_,_B_",
+        "ingredients": {
+            "H": {
+                "type": "item",
+                "code": "game:hammer-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "C": {
+                "type": "item",
+                "code": "game:chisel-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "B": {
+                "type": "block",
+                "code": "axleinblocks:gearscrate_p-c-*-s",
+                "name": "wood"
+            }
+        },
+        "width": 3,
+        "height": 3,
+        "output": {
+            "type": "block",
+            "code": "axleinblocks:gearscrate_p-n-{wood}-s",
+            "quantity": 1
+        }
+    },
+    {
+        "ingredientPattern": "_H_,_C_,LBL",
+        "ingredients": {
+            "H": {
+                "type": "item",
+                "code": "game:hammer-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "C": {
+                "type": "item",
+                "code": "game:chisel-*",
+                "isTool": true,
+                "toolDurabilityCost": 5
+            },
+            "L": {
+                "type": "item",
+                "code": "game:plank-*",
+                "name": "wood"
+            },
+            "B": {
+                "type": "block",
+                "code": "axleinblocks:gearscrate_p-n-*-s",
+                "name": "wood"
+            }
+        },
+        "width": 3,
+        "height": 3,
+        "output": {
+            "type": "block",
+            "code": "axleinblocks:gearscrate_p-c-{wood}-s",
+            "quantity": 1
+        }
+    }
+]

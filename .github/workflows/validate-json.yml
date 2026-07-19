@@ -1,0 +1,42 @@
+name: Validate JSON assets
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-json:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Parse mod JSON files
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+
+          files = [Path("AxleInBlocks/modinfo.json")]
+          files.extend(sorted(Path("AxleInBlocks/assets").rglob("*.json")))
+          failures = []
+
+          for path in files:
+              try:
+                  with path.open("r", encoding="utf-8-sig") as source:
+                      json.load(source)
+                  print(f"OK: {path}")
+              except Exception as error:
+                  failures.append(f"{path}: {error}")
+
+          if failures:
+              print("\nInvalid JSON:")
+              print("\n".join(failures))
+              raise SystemExit(1)
+
+          print(f"Validated {len(files)} JSON files.")
+          PY
