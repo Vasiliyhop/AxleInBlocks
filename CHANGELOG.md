@@ -4,6 +4,20 @@ Notable player-visible changes to Axle in Blocks are recorded here.
 
 ## Unreleased
 
+## 1.22.6 - 2026-08-01
+
+### Changed
+
+- Updated and tested the mod against Vintage Story 1.22.6.
+- Replaced fresh animal fat with rendered fat in all covered-axle crafting
+  recipes, matching the current vanilla mechanical recipes.
+
+### Validation
+
+- Builds without compiler warnings or errors against Vintage Story 1.22.6.
+- Validated all recipe JSON and loaded the packaged mod on a dedicated server
+  without recipe-resolution or startup errors.
+
 ## 1.22.3 - 2026-07-19
 
 ### Changed
