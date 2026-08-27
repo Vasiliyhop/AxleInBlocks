@@ -1,0 +1,15 @@
+<Project>
+
+  <!--
+    AllowMissingPrunePackageData: .NET SDK 10.0.201 fails the build with
+    NETSDK1226 ("Prune Package data not found .NETCoreApp 10.0
+    Microsoft.NETCore.App") when the offline prune-package data for
+    Microsoft.NETCore.App is not present in the SDK. The mod references only
+    local Vintage Story assemblies, so there are no framework packages to
+    prune and the check can safely be skipped.
+  -->
+  <PropertyGroup>
+    <AllowMissingPrunePackageData>true</AllowMissingPrunePackageData>
+  </PropertyGroup>
+
+</Project>
