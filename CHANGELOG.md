@@ -4,6 +4,25 @@ Notable player-visible changes to Axle in Blocks are recorded here.
 
 ## Unreleased
 
+## 1.22.7 - 2026-10-18
+
+### Changed
+
+- Updated and tested the mod against Vintage Story 1.22.7.
+- Improved Linux and macOS build support by making `build.sh` directly
+  executable and allowing builds with .NET installations that lack optional
+  package-pruning metadata. Contributed by Feyd (`joyedit`).
+- Updated the build toolchain to use a patched cryptography dependency.
+
+### Validation
+
+- Builds and packages without compiler warnings or errors against Vintage
+  Story 1.22.7.
+- Verified that the packaged mod and all recipes load without errors on both a
+  dedicated server and an isolated client world.
+- Audited direct and transitive build dependencies with no known vulnerable
+  packages remaining.
+
 ## 1.22.6 - 2026-08-01
 
 ### Changed

@@ -5,8 +5,8 @@
     "name": "Axle in blocks",
     "authors": [ "Fossilien" ],
     "description": "Allows hide axle, gears and transmission inside bricks, dry stone and wooden planks.",
-    "version": "1.22.6",
+    "version": "1.22.7",
     "dependencies": {
-        "game": "1.22.6"
+        "game": "1.22.7"
     }
 }

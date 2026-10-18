@@ -4,7 +4,7 @@ Axle in Blocks hides axles, angled gears, and transmissions inside brick,
 dry-stone, clay-brick, and plank covers in Vintage Story.
 
 This community-maintainable port is based on `VintageStory.Mod.Templates
-1.22.0`, targets Vintage Story 1.22.6, and uses .NET 10. The original mod was
+1.22.0`, targets Vintage Story 1.22.7, and uses .NET 10. The original mod was
 created by Fossilien.
 
 ## Maintenance status
@@ -22,7 +22,7 @@ is also available for historical discussion.
 
 ## Requirements
 
-- Vintage Story 1.22.6 (the tested version)
+- Vintage Story 1.22.7 (the tested version)
 - .NET 10 SDK
 - A `VINTAGE_STORY` environment variable pointing to the game installation
 

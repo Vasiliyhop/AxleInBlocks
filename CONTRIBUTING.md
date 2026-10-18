@@ -10,7 +10,7 @@ maintenance are very welcome.
 You need:
 
 - the .NET 10 SDK;
-- your own legally obtained Vintage Story 1.22.6 installation;
+- your own legally obtained Vintage Story 1.22.7 installation;
 - the `VINTAGE_STORY` environment variable set to the game directory.
 
 For example, in a Windows PowerShell session:
